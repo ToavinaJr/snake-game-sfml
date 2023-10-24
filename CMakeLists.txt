@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.26.4)
+project(game)
+find_package(SFML COMPONENTS graphics window system)
+add_executable(game main.cpp snake.cpp)
+target_link_libraries(game sfml-window sfml-graphics sfml-system)
